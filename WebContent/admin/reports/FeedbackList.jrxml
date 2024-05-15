@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FeedbackList" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ccea49b9-0178-4cd2-9466-bba7e35455db">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from feedback]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="feedback"/>
+	</field>
+	<field name="FeedbackDateTime" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="FeedbackDateTime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="feedback"/>
+	</field>
+	<field name="EmailID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="EmailID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="feedback"/>
+	</field>
+	<field name="FeedbackText" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="FeedbackText"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="feedback"/>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="5dd98661-8690-4dda-a8af-6b111863192b"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="1e6eaafd-7444-42f3-b59c-551fc4cccd89"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Post Office]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="c36c1d91-5c48-48ca-b33c-4e4aed0ba584"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Customers Feedbacks]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="0a8ce3d4-8dec-4e31-90a5-c9af4c8ca8c3"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="0" width="70" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="1ce052a8-6c8e-44c2-86e6-28134b5db556">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aea32451-3a49-43cc-934d-4f7659145ba5"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="60" y="0" width="110" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="d45620c2-efdb-404e-a80c-ec376388bebd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5b12d4d7-3439-4854-a389-b7963aba30f1"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FeedbackDateTime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="170" y="0" width="130" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="52f4083c-2e7d-4f7e-9ee9-ee9349125ee8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="120b6e8e-a61a-4d13-9320-653d95c2a5f5"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EmailID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="300" y="0" width="275" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="5b84372b-873e-4b90-ba0e-4e2e0bc10d45">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b355764f-d8ee-41fb-b9f1-8840eea7a1db"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FeedbackText]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="68f43124-c194-4ab9-b74f-988a4be76c9c"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="-10" y="0" width="70" height="20" uuid="83e75e49-e83e-44a8-b469-6998bda57ae0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aea32451-3a49-43cc-934d-4f7659145ba5"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="60" y="0" width="110" height="20" uuid="0fd5dd16-66a2-4d30-b4c8-d332eb96b6c1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5b12d4d7-3439-4854-a389-b7963aba30f1"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FeedbackDateTime}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="170" y="0" width="110" height="20" uuid="67468eb3-b19e-400c-89cb-c30cda9761ef">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="120b6e8e-a61a-4d13-9320-653d95c2a5f5"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EmailID}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="0" width="272" height="20" uuid="11beb963-2c78-419a-87a2-c750980a11ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b355764f-d8ee-41fb-b9f1-8840eea7a1db"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FeedbackText}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="b7d7d2b5-fec9-4a39-971d-ddb3eb2e95a7"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="e37e93ad-4313-4059-93f4-b63192458355"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="200" height="13" uuid="701cb28d-3c36-4366-b7cc-49b89bc9fd1f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
