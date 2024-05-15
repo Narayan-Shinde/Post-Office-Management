@@ -19,6 +19,5 @@ To run the Post Office Management System locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   
-https://github.com/Narayan-Shinde/postofficemanagement.git
+   https://github.com/Narayan-Shinde/Post-Office-Management.git
  
