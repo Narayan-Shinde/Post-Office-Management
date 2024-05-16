@@ -3,7 +3,8 @@ The Post Office Management System is a software application designed to automate
 It will improve efficiency,reduce manual work,and enhance customer service.
 
 ## Features
-- **Customer Management**: Maintain customer information,track past transactions,and manage accounts.
+
+- **Customer Management**:                                      Maintain customer information,track past transactions,and manage accounts.
 - **Delivery Management**: Manage parcel delivery,track past parcel deliveries.
 - **Financial Management**: Manage transactions,money orders,track past money orders,and generate financial reports.
 - **Bill Payment Services**: Paying electricity & telephones bills,track past bill paying details.
