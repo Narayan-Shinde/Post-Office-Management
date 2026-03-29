@@ -1,0 +1,68 @@
+
+    .main-wrapper {
+        font-family: Arial, sans-serif;
+        background-color: #ffefd5; /* Section background color - PapayaWhip */
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .password-form-wrapper {
+        background-color: #ffe4e1; /* Form background color - Misty Rose */
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 35px;
+        width: 420px;
+        text-align: center;
+    }
+
+    .form-title {
+        color: #333333;
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .input-group label {
+        display: inline-block; /* Ensuring inline behavior */
+        margin-bottom: 10px;
+        color: #555555;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center; /* Centering text */
+        width: 100%; /* Full width for proper alignment */
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #000000; /* Black border */
+        border-radius: 6px;
+        font-size: 15px;
+        text-align: center; /* Centering the placeholder text */
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #ff4500; /* Coral button color */
+        border: none;
+        border-radius: 6px;
+        color: #ffffff;
+        font-size: 17px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #ff4510; /* OrangeRed on hover */
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+

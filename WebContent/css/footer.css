@@ -1,0 +1,14 @@
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moveLeft 5s linear infinite;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@keyframes moveLeft {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}

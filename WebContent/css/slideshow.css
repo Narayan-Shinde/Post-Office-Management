@@ -1,0 +1,38 @@
+#slideshow-container {
+        width: 1365px;
+        height: 520px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #slideshow {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    /* ENTRY Animations */
+    @keyframes zoomIn { from { transform: scale(0.5); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    @keyframes slideLeftToRight { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes slideRightToLeft { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes slideTopToBottom { from { transform: translateY(-100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes slideBottomToTop { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+    /* EXIT Animations */
+    @keyframes zoomOut { from { transform: scale(1); opacity: 1; } to { transform: scale(0.5); opacity: 0; } }
+    @keyframes slideLeftToRightExit { from { transform: translateX(0); opacity: 1; } to { transform: translateX(100%); opacity: 0; } }
+    @keyframes slideRightToLeftExit { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-100%); opacity: 0; } }
+    @keyframes slideTopToBottomExit { from { transform: translateY(0); opacity: 1; } to { transform: translateY(100%); opacity: 0; } }
+    @keyframes slideBottomToTopExit { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-100%); opacity: 0; } }
+
+    /* Apply Animations */
+    .zoom-in { animation: zoomIn 1.5s ease-in-out forwards; }
+    .zoom-out { animation: zoomOut 1.5s ease-in-out forwards; }
+    .slide-in-left { animation: slideLeftToRight 1.5s ease-in-out forwards; }
+    .slide-out-left { animation: slideRightToLeftExit 1.5s ease-in-out forwards; }
+    .slide-in-right { animation: slideRightToLeft 1.5s ease-in-out forwards; }
+    .slide-out-right { animation: slideLeftToRightExit 1.5s ease-in-out forwards; }
+    .slide-in-top { animation: slideTopToBottom 1.5s ease-in-out forwards; }
+    .slide-out-top { animation: slideBottomToTopExit 1.5s ease-in-out forwards; }
+    .slide-in-bottom { animation: slideBottomToTop 1.5s ease-in-out forwards; }
+    .slide-out-bottom { animation: slideTopToBottomExit 1.5s ease-in-out forwards; }

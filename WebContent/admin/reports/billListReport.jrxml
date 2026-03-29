@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bill list" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f7ae0177-8368-4237-97e9-9a1c8f67dc95">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select*from postdb.bills ]]>
+	</queryString>
+	<field name="BillNo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="BillNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bills"/>
+	</field>
+	<field name="BillType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="BillType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bills"/>
+	</field>
+	<field name="EmailId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="EmailId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bills"/>
+	</field>
+	<field name="AcNo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="AcNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bills"/>
+	</field>
+	<field name="Amount" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="Amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bills"/>
+	</field>
+	<field name="PaidDate" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="PaidDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bills"/>
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{BillNo}]]></groupExpression>
+		<groupHeader>
+			<band height="33">
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="100" height="32" forecolor="#666666" backcolor="#E6E6E6" uuid="3a6e7c0e-e9b8-4b4e-9758-1d44bcdd7a72"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[BillNo]]></text>
+				</staticText>
+				<textField>
+					<reportElement mode="Opaque" x="100" y="0" width="455" height="32" forecolor="#006699" backcolor="#E6E6E6" uuid="181f167a-74c2-4079-bbdc-02ea1411c3b3"/>
+					<textElement>
+						<font size="24" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{BillNo}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="-20" y="32" width="595" height="1" forecolor="#666666" uuid="9a9530b4-4f05-4302-b0a6-1f9987ecbae4"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{BillType}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement x="100" y="0" width="455" height="32" forecolor="#006699" uuid="f1e78e10-3365-40d1-92ad-4f582ec884dc"/>
+					<textElement>
+						<font size="22" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{BillType}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="20" forecolor="#666666" uuid="9f090d2f-fffc-4d89-9fee-0f78553b7559"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[BillType]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group3">
+		<groupExpression><![CDATA[$F{EmailId}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement x="100" y="0" width="455" height="32" forecolor="#006699" uuid="914da8d8-f620-4b74-9ef6-768e8c688b33"/>
+					<textElement>
+						<font size="20" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{EmailId}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="20" forecolor="#666666" uuid="fe06bcea-3dfe-4e63-be07-de78fdda5d2f"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[EmailId]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group4">
+		<groupExpression><![CDATA[$F{AcNo}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement x="100" y="0" width="455" height="32" forecolor="#006699" uuid="11ae0f58-5c69-41cd-9454-75d728f25f79"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{AcNo}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="20" forecolor="#666666" uuid="d049f9db-31d7-44e7-90bf-409e1583fe9f"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[AcNo]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Amount">
+		<groupExpression><![CDATA[$F{Amount}]]></groupExpression>
+	</group>
+	<group name="PaidDate">
+		<groupExpression><![CDATA[$F{PaidDate}]]></groupExpression>
+	</group>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="b6592c2c-bebd-4064-bc1b-0c1c2ffb876a"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="03afc9a0-fd22-4221-9c83-952dc66667f8"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TITLE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="fc55c2ba-bf42-4fce-af36-f96c3a9092f0"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Add a description here]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="e5f3cabb-782a-4c8c-9d31-b5df19bb0072"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="afcb5b4e-c739-45ae-bdfd-2546073cf980"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="4b727a79-25da-4b32-bd21-c5716b279a95"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="8567083c-59e6-4d34-9b8e-c5d3f468f833"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="db763068-eb92-4530-9308-3d4406e21aa5"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

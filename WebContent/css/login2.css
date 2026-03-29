@@ -1,0 +1,110 @@
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #005f99, #001f3f);
+        }
+
+        .form-container {
+            background: linear-gradient(to right, #00c6ff, #005f99, #001f3f);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .form-container h2 {
+            margin-bottom: 30px;
+            font-size: 38px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .input-field {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .input-field label {
+	    	 margin-bottom: 10px;
+	    	 font-size: 24px;
+	   		 color: #000;
+	   	 	 display: block;
+	         text-align: center;
+         }
+
+        .input-field input {
+		    width: 100%;
+		    padding: 12px;
+		    border: 1px solid #ccc;
+		    border-radius: 8px;
+		    font-size: 16px;
+		    text-align: center;
+		    transition: 0.3s ease;
+			}
+
+		input::placeholder {
+    		text-align: center;
+			}
+
+        .input-field input:focus {
+	            border-color: #007bff;
+	            outline: none;
+       		 }
+
+        .center-button {
+	            display: flex;
+	            justify-content: center;
+        	}
+
+        .center-button button {
+	            padding: 1em 2em;
+	            background: linear-gradient(to right, #00c6ff, #005f99, #001f3f);
+	            border: none;
+	            color: #f0f0f0;
+	            border-radius: 1000px;
+	            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	            position: relative;
+	            display: flex;
+	            justify-content: center;
+	            align-items: center;
+	            font-size: 16px;
+	            cursor: pointer;
+	            text-align: center;
+	            transition: background-color 0.3s, transform 0.2s ease-in-out;
+	            text-decoration: none;
+       		   }
+
+        .center-button button::after {
+	            content: '';
+	            position: absolute;
+	            height: 107%;
+	            width: 102%;
+	            border-radius: 1000px;
+	            background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+	            z-index: -1;
+        }
+
+        .center-button button:hover {
+	            z-index: 0;
+	            box-shadow: 40px 0 100px #008cff, -40px 0 100px #e100ff;
+	            transform: scale(1.05);
+        }
+
+        .register-link {
+	            text-align: center;
+	            margin-top: 15px;
+        }
+
+        .register-link a {
+	            color: #007bff;
+	            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            	text-decoration: underline;
+        }
